@@ -1,0 +1,54 @@
+
+**** 12/16/21 09:47:30 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vout"  [ c:\cadence\progetto orale-pspicefiles\schematic1\vout.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Vout.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1000 0.01 10g
+.NOISE V([VOUT]) V_V1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROGETTO ORALE
+E_U1         VOUT 0 LAPLACE {V(N14947,N14433)*1E5}={{1/((1+1/(2*pi*{10e7}/
++ {1E5})*s))}}
+C_C1         N14433 VOUT  2.2n  TC=0,0 
+R_R1         VOUT N14469  150k TC=0,0 
+R_R2         N14469 N14481  10k TC=0,0 
+R_R3         N14481 N14433  2.2k TC=0,0 
+R_R4         N14433 0  330 TC=0,0 
+V_V1         N14868 0 DC 0Vdc AC 1Vac 
+X_U2         N14947 N14868 VNOISE
+X_U3         0 N14433 INOISE
+
+**** RESUMING Vout.cir ****
+.END
+
+ERROR(ORPSIM-15108): Subcircuit VNOISE used by X_U2 is undefined
+
+ERROR(ORPSIM-15108): Subcircuit INOISE used by X_U3 is undefined
+
+INFO(ORPSIM-16573): AC analysis does not support expression evaluation at each frequency. ABM devices with non-linear operations will be evaluated only at bias point.
+

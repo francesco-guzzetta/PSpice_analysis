@@ -1,0 +1,199 @@
+
+**** 02/20/22 04:56:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vout"  [ C:\Users\sna\OneDrive - Politecnico di Milano\Desktop\New folder\es170717_2_guzzetta-pspicefiles\sc
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Vout.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "C:\Users\sna\OneDrive - Politecnico di Milano\PSpice-20211211\NOISE\VNOISE.LIB" 
+.lib "C:\Users\sna\OneDrive - Politecnico di Milano\PSpice-20211211\NOISE\INOISE.LIB" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1000 0.01 10g
+.NOISE V([VOUT]) V_V1 
+.STEP PARAM R1var LIST 162500 12530 2530 330 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ES170717_2_GUZZETTA
+E_U1         VOUT 0 LAPLACE {V(N14947,N14433)*1E5}={{1/((1+1/(2*pi*{10e7}/
++ {1E5})*s))}}
+C_C1         N14433 VOUT  2.2n  TC=0,0 
+R_R1         N14433 0  {R1var} TC=0,0 
+V_V1         N14868 0 DC 0Vdc AC 1Vac 
+X_U2         N14947 N14868 VNOISE
+X_U3         0 N14433 INOISE
+R_R2         VOUT N14433  {162530-R1var} TC=0,0 
+.PARAM  r1var=0
+
+**** RESUMING Vout.cir ****
+.END
+
+INFO(ORPSIM-16573): AC analysis does not support expression evaluation at each frequency. ABM devices with non-linear operations will be evaluated only at bias point.
+
+**** 02/20/22 04:56:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vout"  [ C:\Users\sna\OneDrive - Politecnico di Milano\Desktop\New folder\es170717_2_guzzetta-pspicefiles\sc
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAR =  162.5000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( VOUT)    0.0000  (N14433)    0.0000 (N14868)    0.0000 (N14947)    0.0000     
+
+(X_U2.N14358)    0.0000               (X_U3.N14381)    0.0000               
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 02/20/22 04:56:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vout"  [ C:\Users\sna\OneDrive - Politecnico di Milano\Desktop\New folder\es170717_2_guzzetta-pspicefiles\sc
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAR =   12.5300E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( VOUT)    0.0000  (N14433)    0.0000 (N14868)    0.0000 (N14947)    0.0000     
+
+(X_U2.N14358)    0.0000               (X_U3.N14381)    0.0000               
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 02/20/22 04:56:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vout"  [ C:\Users\sna\OneDrive - Politecnico di Milano\Desktop\New folder\es170717_2_guzzetta-pspicefiles\sc
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAR =    2.5300E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( VOUT)    0.0000  (N14433)    0.0000 (N14868)    0.0000 (N14947)    0.0000     
+
+(X_U2.N14358)    0.0000               (X_U3.N14381)    0.0000               
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 02/20/22 04:56:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vout"  [ C:\Users\sna\OneDrive - Politecnico di Milano\Desktop\New folder\es170717_2_guzzetta-pspicefiles\sc
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM R1VAR =  330   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( VOUT)    0.0000  (N14433)    0.0000 (N14868)    0.0000 (N14947)    0.0000     
+
+(X_U2.N14358)    0.0000               (X_U3.N14381)    0.0000               
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/20/22 04:56:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vout"  [ C:\Users\sna\OneDrive - Politecnico di Milano\Desktop\New folder\es170717_2_guzzetta-pspicefiles\sc
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM R1VAR =  330   
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        2.20
+

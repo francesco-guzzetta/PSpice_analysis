@@ -1,0 +1,154 @@
+(ExpressProject "progetto orale"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 S022 (3984475)  [10/10/2021]-[02/20/22]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\spb_17.4\tools\capture\library\pspice\analog.olb"
+        (DisplayName ".\spb_17.4\tools\capture\library\pspice\analog.olb")
+        (Type "Schematic Library"))
+      (File ".\spb_17.4\tools\capture\library\pspice\breakout.olb"
+        (DisplayName ".\spb_17.4\tools\capture\library\pspice\breakout.olb")
+        (Type "Schematic Library"))
+      (File ".\spb_17.4\tools\capture\library\pspice\source.olb"
+        (DisplayName ".\spb_17.4\tools\capture\library\pspice\source.olb")
+        (Type "Schematic Library"))
+      (File ".\spb_17.4\tools\capture\library\pspice\special.olb"
+        (DisplayName ".\spb_17.4\tools\capture\library\pspice\special.olb")
+        (Type "Schematic Library"))
+      (File ".\spb_17.4\tools\capture\library\pspice\advancedopamps.olb"
+        (Type "Schematic Library")
+        (DisplayName
+           ".\spb_17.4\tools\capture\library\pspice\advancedopamps.olb"))
+      (File ".\spb_17.4\tools\capture\library\pspice\noise.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\spb_17.4\tools\capture\library\pspice\noise.olb")))
+    (NoModify)
+    (File ".\es170717_2_guzzetta.DSN"
+      (Type "Schematic Design")
+      (DisplayName ".\es170717_2_guzzetta.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "TRUE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\es170717_2_guzzetta-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net"
+      (Type "Report")
+      (DisplayName
+         ".\es170717_2_guzzetta-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\es170717_2_guzzetta-pspicefiles\schematic1\bias.sim"
+        (DisplayName "SCHEMATIC1-bias")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\es170717_2_guzzetta-pspicefiles\schematic1\vout.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\es170717_2_guzzetta-pspicefiles\schematic1\vout.sim"
+        (DisplayName "SCHEMATIC1-Vout")
+        (Type "PSpice Profile"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (INOISE
+      (FullPartName "INOISE.Normal")
+      (LibraryName
+         "C:\USERS\SNA\ONEDRIVE - POLITECNICO DI MILANO\PSPICE-20211211\NOISE\NOISE.OLB")
+      (DeviceIndex "0"))
+    (VNOISE
+      (FullPartName "VNOISE.Normal")
+      (LibraryName
+         "C:\USERS\SNA\ONEDRIVE - POLITECNICO DI MILANO\PSPICE-20211211\NOISE\NOISE.OLB")
+      (DeviceIndex "0"))
+    (E
+      (FullPartName "E.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (OPAMP_REAL
+      (FullPartName "OPAMP_REAL.Normal")
+      (LibraryName
+         "C:\USERS\SNA\ONEDRIVE - POLITECNICO DI MILANO\PSPICE-20211211\ADVANCEDOPAMPS\ADVANCEDOPAMPS.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_17.4\tools\capture\library\pspice")
+  (MPSSessionName "sna")
+  (Folder "Logs")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\sna\OneDrive - Politecnico di Milano\Desktop\ES170717_2_GUZZETTA\es170717_2_guzzetta.DSN")
+      (Path "Design Resources"
+         "C:\Users\sna\OneDrive - Politecnico di Milano\Desktop\ES170717_2_GUZZETTA\es170717_2_guzzetta.DSN"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\sna\OneDrive - Politecnico di Milano\Desktop\ES170717_2_GUZZETTA\es170717_2_guzzetta.DSN"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 393 0 475"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 560 24 493")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\SNA\ONEDRIVE - POLITECNICO DI MILANO\DESKTOP\ES170717_2_GUZZETTA\ES170717_2_GUZZETTA.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

@@ -1,0 +1,10 @@
+* source ES170717_2_GUZZETTA
+E_U1         VOUT 0 LAPLACE {V(N14947,N14433)*1E5}={{1/((1+1/(2*pi*{10e7}/
++ {1E5})*s))}}
+C_C1         N14433 VOUT  2.2n  TC=0,0 
+R_R1         N14433 0  {R1var} TC=0,0 
+V_V1         N14868 0 DC 0Vdc AC 1Vac 
+X_U2         N14947 N14868 VNOISE
+X_U3         0 N14433 INOISE
+R_R2         VOUT N14433  {162530-R1var} TC=0,0 
+.PARAM  r1var=0

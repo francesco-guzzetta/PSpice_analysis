@@ -1,0 +1,23 @@
+** Profile: "SCHEMATIC1-Vout"  [ C:\Users\sna\OneDrive - Politecnico di Milano\Desktop\New folder\es170717_2_guzzetta-pspicefiles\schematic1\vout.sim ] 
+
+** Creating circuit file "Vout.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "C:\Users\sna\OneDrive - Politecnico di Milano\PSpice-20211211\NOISE\VNOISE.LIB" 
+.lib "C:\Users\sna\OneDrive - Politecnico di Milano\PSpice-20211211\NOISE\INOISE.LIB" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1000 0.01 10g
+.NOISE V([VOUT]) V_V1 
+.STEP PARAM R1var LIST 162500 12530 2530 330 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
